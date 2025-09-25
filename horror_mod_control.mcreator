@@ -1,0 +1,121 @@
+{
+  "mod_elements": [
+    {
+      "name": "TBSMoonTrigger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tbs_moon_trigger",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/lukenni/horrormodcontrol/procedures/TBSMoonTriggerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GameOverDetector",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "game_over_detector",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/lukenni/horrormodcontrol/procedures/GameOverDetectorProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GameOverReset",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "game_over_reset",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/lukenni/horrormodcontrol/procedures/GameOverResetProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "dayCounter",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
+    },
+    {
+      "name": "moonTriggered",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "killByGameOver",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {}
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/lukenni/horrormodcontrol/network/HorrorModControlModVariables.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/lukenni/horrormodcontrol/HorrorModControlMod.java",
+      "src/main/resources/pack.mcmeta"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "horror_mod_control",
+    "modName": "HorrorModControl",
+    "version": "1.0.0",
+    "description": "Made for this modpack",
+    "author": "Lukenni",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using MCreator",
+    "modElementsPackage": "net.lukenni.horrormodcontrol"
+  },
+  "mcreatorVersion": 202500228610
+}
